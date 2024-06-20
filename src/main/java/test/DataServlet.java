@@ -13,8 +13,9 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/radio")
 public class DataServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-
+         
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+float b=90;
 		PrintWriter pw=response.getWriter();
 		String name=request.getParameter("Name");
 		int age=Integer.parseInt(request.getParameter("Age"));
